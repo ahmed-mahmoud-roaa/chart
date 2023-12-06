@@ -1,0 +1,11 @@
+<div class="chart-container">
+  <div class="chart-container" style="width: 30%">
+    <canvas [id]="ChartId">{{ chart }}</canvas>
+  </div>
+
+  <ul>
+    <li *ngFor="let item of labels" [style.backgroundColor]="item.color">
+      {{ item.text }}
+    </li>
+  </ul>
+</div>
